@@ -26,7 +26,7 @@ bm = bmesh.from_edit_mesh(me)
 #		if luv.select: #apply the location of the vertex as a UV
 #			luv.uv = l.vert.co.xy
 
-bpy.ops.uv.cube_project()
+bpy.ops.uv.smart_project()
 
 #image = bpy.data.images.new(name="test.jpg", width=800, height=600)
 
@@ -34,6 +34,12 @@ bpy.ops.uv.cube_project()
 #    uv_face.image = image
 
 #bpy.ops.object.bake_image()
+
+name = "night_stand_0026"
+
+mat = bpy.data.materials.new(name)
+
+me.materials.append(mat)
 
 bmesh.update_edit_mesh(me)
 
