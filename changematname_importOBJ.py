@@ -31,4 +31,5 @@ for obj in objects:
  
 obj_out = 'test.obj'
  
-bpy.ops.export_scene.obj(filepath=obj_out, axis_forward='-Z', axis_up='Y')
+bpy.ops.export_scene.obj(filepath=obj_out, axis_forward='-Z', axis_up='Y'
+                        use_normals=True, use_uvs=True, use_materials=True)
