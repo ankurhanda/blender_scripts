@@ -29,7 +29,7 @@ for obj in objects:
 #argv = sys.argv
 #argv = argv[argv.index("--") + 1:] # get all args after "--"
  
-obj_out = 'test.obj'
+obj_out = 'with_wnid/' + full_path_to_file
  
-bpy.ops.export_scene.obj(filepath=obj_out, axis_forward='-Z', axis_up='Y'
+bpy.ops.export_scene.obj(filepath=obj_out, axis_forward='-Z', axis_up='Y',
                         use_normals=True, use_uvs=True, use_materials=True)
